@@ -56,7 +56,7 @@ const ingresar = async () => {
 //ingresar()
     
 
-
+//actualizar alumnos, PUT
 const actualizar = async () => {
     try {
         const text =
@@ -71,6 +71,8 @@ const actualizar = async () => {
 //actualizar()
 
 
+
+//Eliminar alumnos, DELETE
 const eliminar = async () => {
     try {
         const text = "delete from alumnos where rut = $1";
