@@ -1,0 +1,28 @@
+CREATE TABLE alumnos (
+	RUT VARCHAR (15),
+	NOMBRE VARCHAR (50),
+	CURSO VARCHAR(50),
+	NIVEL INT
+);
+
+SELECT * FROM alumnos limit 10;
+
+
+--insert
+INSERT INTO ALUMNOS VALUES
+('111', 'NOMBRE1', 'JS', '1'),
+('222', 'NOMBRE2', 'JS', '2'),
+('333', 'NOMBRE3', 'JS', '3');
+
+
+SELECT NOW();
+SELECT * FROM ALUMNOS WHERE RUT = '111';
+
+--update
+UPDATE alumnos
+SET NOMBRE = 'NOMBRE1', CURSO = 'JS', NIVEL = 4
+WHERE rut = '111'
+
+--delete
+DELETE FROM ALUMNOS
+where rut = '333';
